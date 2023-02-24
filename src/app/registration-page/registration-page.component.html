@@ -1,18 +1,37 @@
-<div class="logincontainer">
-    <form>
+<div class="logincontainer" style="margin:30px">
+  <!--
+  <form>
         <div class="sm-3">
           <label for="" class="form-label">Name</label>
           <input type="" class="form-control" id="">
         </div>
-        <div class="sm-3">
+        !--<div class="sm-3">
           <label for="" class="form-label">Password</label>
           <input type="password" class="form-control" id="">
-        </div>
+        </div> --
         <div class="sm-3">
             <label for="" class="form-label">Email</label>
             <input type="password" class="form-control" id="">
           </div>
+          <div class="sm-3">
+            <label for="" class="form-label">Pancard</label>
+            <input type="" class="form-control" id="">
+          </div>
           <div class="form-label"><a routerLink="/login">Login page</a></div>
         <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form> -->
+
+      <div class="form-label"><a routerLink="/login" style="text-decoration:none;color:black">Enter OTP </a></div>
+
+      <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+        <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+        <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+        <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+        <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+       
       </form>
-</div>
+  </div>
+
+
+ 
