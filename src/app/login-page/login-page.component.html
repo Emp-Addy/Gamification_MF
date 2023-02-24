@@ -1,14 +1,12 @@
 <div class="logincontainer">
-    <form>
+    <form style="margin:30px">
         <div class="sm-3">
-          <label for="" class="form-label">Name</label>
-          <input type="" class="form-control" id="">
+          <label for="" class="form-label">Phone No</label>
+          <input class="form-control input-md textbox single-line" type="number" max="9999999999" min="1000000000" required="required" id="" maxlength="10">
         </div>
-        <div class="sm-3">
-          <label for="" class="form-label">Password</label>
-          <input type="password" class="form-control" id="">
-        </div>
-          <div class="form-label">New User Register first!!!<a routerLink="/signup">Sign up</a></div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <!--<div class="form-label">New User Register first!!!<a routerLink="/signup">Sign up</a></div>-->
+        <a routerLink="/signup" class="btn btn-primary" style="margin-top:10px;text-align:center;display:inherit">Generate Otp</a>
+        <!--<button type="submit" class="btn btn-primary" style="margin-top:10px">Generate Otp</button>-->
       </form>
 </div>
